@@ -1,3 +1,4 @@
+
 function registro(){
     var user, password, email, password2
 
@@ -11,8 +12,16 @@ function registro(){
     }else if(password != password2){
         alert("Las contraseñas no coinciden")
     }else if(email != ""  && password != ""  && password2 != ""  && user != ""){
-        window.location.href = "login.html";
+      
     }else{
         alert("Datos Incorrectos o campos sin rellenar")
     }  
+
+    var username = document.getElementById("Usuario").value;
+    var password = document.getElementById("Pass").value;
+
+    localStorage.setItem("Usuario", username);
+    localStorage.setItem("Pass", password);
+    
+    document.getElementById("formu").reset();
 }
