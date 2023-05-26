@@ -11,19 +11,27 @@
     <div class="contenedor">
          <h1>Registro</h1>
          <form action="#" id="formu">
+            <input type="Nombre" placeholder="Nombre" id="Nombre" name="Nombre"  required>
             <input type="email" placeholder="Email" id="email" name="email" required>
+            <input type="fecha" placeholder="Fecha de Nacimiento" id="fecha" name="fecha"  required>
             <input type="text" placeholder="Nombre de Usuario" id="Usuario" name="Usuario"  required>
             <input type="password" placeholder="Contraseña" id="Pass" name="Pass"  required>
             <input type="password" placeholder="Repita la contraseña" id="Pass2" name="Pass2"  required>
          </form>
          <div class="condiciones">
+            <input type="checkbox" id="checkbox" checked>
+            <label for="checkbox" >Deseo recibir información sobre novedades y
+               ofertas"</label>
+         </div>
+         <div class="condiciones">
             <input type="checkbox" id="checkbox">
-            <label for="checkbox">Estoy de acuerdo </label>
+            <label for="checkbox">Declaro haber leído y acepto las condiciones
+               generales del programa y la normativa sobre protección de datos</label>
          </div>
          <button onclick="registro()">Registrarse</button>
          <div class="miembro"> ¿ Ya tienes cuenta ? 
             <a href="login.html">LogIn</a>
-         </div>
+         </div>      
     </div>
 </body>
 <script src='main-registro.js'></script>

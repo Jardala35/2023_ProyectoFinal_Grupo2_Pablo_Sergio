@@ -12,7 +12,7 @@ function registro(){
     }else if(password != password2){
         alert("Las contraseñas no coinciden")
     }else if(email != ""  && password != ""  && password2 != ""  && user != ""){
-      
+        window.location.href = "login.html";
     }else{
         alert("Datos Incorrectos o campos sin rellenar")
     }  
