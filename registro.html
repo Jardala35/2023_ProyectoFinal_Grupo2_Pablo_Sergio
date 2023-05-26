@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Registro TrailerFlix</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style-registro.css'>
+</head>
+<body>
+    <div class="contenedor">
+         <h1>Registro</h1>
+         <form action="#" id="formu">
+            <input type="email" placeholder="Email" id="email" name="email" required>
+            <input type="text" placeholder="Nombre de Usuario" id="Usuario" name="Usuario"  required>
+            <input type="password" placeholder="Contraseña" id="Pass" name="Pass"  required>
+            <input type="password" placeholder="Repita la contraseña" id="Pass2" name="Pass2"  required>
+         </form>
+         <div class="condiciones">
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox">Estoy de acuerdo </label>
+         </div>
+         <button onclick="registro()">Registrarse</button>
+         <div class="miembro"> ¿ Ya tienes cuenta ? 
+            <a href="login.html">LogIn</a>
+         </div>
+    </div>
+</body>
+<script src='main-registro.js'></script>
+</html>
