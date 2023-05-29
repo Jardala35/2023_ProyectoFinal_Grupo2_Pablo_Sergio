@@ -23,13 +23,32 @@
     flex: 0;
 }
 
-.logo{
+
+a.linkini{
+    text-decoration: none;
     font-size: 40px;
     color: red;
     font-family: 'Tahoma', Tahoma, Geneva, Verdana, sans-serif;
+
 }
+a:hover,
+a:focus{
+    font-size: 40px;
+    color: red;
+    font-family: 'Tahoma', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+.icon{
+    background-color: aliceblue;
+}
+
 .menu-contenedor{
-    flex: 6;
+    width: 100%;
+    height: 75px;
+    background-color: black;
+    position: sticky;
+    top: 0;
     
 }
 
