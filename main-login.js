@@ -18,3 +18,20 @@ function login(){
   document.getElementById("formu").reset();
 }
 
+var boton = document.getElementById("pwd");
+var volver = document.getElementById("volver")
+var contenido = document.getElementById("segundoC");
+var contenido2 = document.getElementById("primerC")
+
+boton.addEventListener("click", function(event) {
+event.preventDefault();
+contenido.style.display = "block";
+contenido2.style.display = "none";
+
+});
+volver.addEventListener("click", function(event) {
+event.preventDefault();
+contenido.style.display = "none";
+contenido2.style.display = "block";
+
+});
