@@ -8,18 +8,30 @@
     <link rel='stylesheet' type='text/css' media='screen' href='style-login.css'>
 </head>
 <body>
-    <div class="contenedor">
+    <div class="contenedor" id="primerC">
          <h1>LogIn</h1>
          <form action="#" id="formu">
             <input type="text" placeholder="Usuario" id="Usuario" name="Usuario" required>
             <input type="password" placeholder="Contraseña" id="Pass" name="Pass" required>
-            <div class="pwd"> <a href="#">¿ Has olvidado tu contraseña ? </a></div>
+            <div class="pwd"> <a href="#" id="pwd">¿ Has olvidado tu contraseña ? </a></div>
          </form>
          <button onclick="login()">LogIn</button>
          <div class="miembro"> ¿ No tienes cuenta ? 
             <a href="registro.html">Registrate</a>
          </div>
     </div>
-</body>
+    <div class="contenedor" style="display: none" id="segundoC">
+        <h1>Recuperacion contraseña</h1>
+        <form action="#" id="formu" >
+           <input type="text" placeholder="Usuario" id="Usuario" name="Usuario" required>
+           <input type="password" placeholder="Contraseña" id="Pass" name="Pass" required>
+           <input type="date" placeholder="Fecha de su Nacimiento" id="fecha" name="fecha" required>
+        </form>
+        <button>Recuperar contraseña</button>
+        <div class="miembro">
+           <a href="#" id="volver">Volver al login</a>
+        </div>
+   </div>
+</body> 
 <script src='main-login.js'></script>
 </html>

@@ -7,21 +7,21 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='style-registro.css'>
 </head>
-<body background="/Proyecto Marcas/imgs/up.jpg">
+<body>
     <div class="contenedor">
          <h1>Registro</h1>
-         <form action="#" id="formu">
-            <input type="text" placeholder="Nombre" id="Nombre" name="Nombre"  required>
-            <input type="email" placeholder="Email" id="email" name="email" required>
-            <input type="date" placeholder="Fecha de Nacimiento" id="fecha" name="fecha"  required>
+         <form action="#" id="formu"  onsubmit ="validarRegistro()">
+            <input type="Nombre" placeholder="Nombre" id="Nombre" name="Nombre"  required>
             <input type="text" placeholder="Nombre de Usuario" id="Usuario" name="Usuario"  required>
+            <input type="email" placeholder="Email" id="email" name="email" required>
+            <input type="date" placeholder="Fecha de Nacimiento" id="date" name="date" min="1950-02-12" max="2023-08-12"  required>     
             <input type="password" placeholder="Contraseña" id="Pass" name="Pass"  required>
             <input type="password" placeholder="Repita la contraseña" id="Pass2" name="Pass2"  required>
          </form>
          <div class="condiciones">
             <input type="checkbox" id="checkbox" checked>
-            <label for="checkbox" >Deseo recibir información sobre novedades y
-               ofertas"</label>
+            <label for="checkbox" >Deseo recibir información sobre novedades y   
+               ofertas</label>
          </div>
          <div class="condiciones">
             <input type="checkbox" id="checkbox">
