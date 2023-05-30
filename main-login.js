@@ -1,37 +1,41 @@
 function login(){
+  var nombre = document.getElementById("Usuario").value;
+  var contraseña = document.getElementById("Pass").value;
 
-  var loginUsername = document.getElementById("Usuario").value;
-  var loginPassword = document.getElementById("Pass").value;
-  
-  // Obtener los datos almacenados del registro
-  var storedUsername = localStorage.getItem("Usuario");
-  var storedPassword = localStorage.getItem("Pass");
-  
-  // Verificar si los datos coinciden
-  if (loginUsername === storedUsername && loginPassword === storedPassword) {
-    window.location.href = "index.html";
-    // Aquí puedes redirigir al usuario a otra página o realizar otras acciones después del inicio de sesión exitoso.
+  // Obtener los registros almacenados en localStorage
+  var registros = localStorage.getItem("registros");
+  if (registros) {
+    registros = JSON.parse(registros);
+
+    // Buscar el usuario en los registros
+    var usuarioEncontrado = registros.find(function (usuario) {
+      return usuario.nombre === nombre && usuario.contraseña === contraseña;
+    });
+
+    if (usuarioEncontrado) {
+      window.location.href = "index.html"; 
+    } else {
+      alert("Nombre de usuario o contraseña incorrectos. Por favor, inténtalo nuevamente.");
+    }
   } else {
-    alert("Nombre de usuario o contraseña incorrectos.");
-   
+    alert("No hay usuarios registrados. Por favor, regístrate primero.");
   }
-  document.getElementById("formu").reset();
 }
 
-var boton = document.getElementById("pwd");
-var volver = document.getElementById("volver")
-var contenido = document.getElementById("segundoC");
-var contenido2 = document.getElementById("primerC")
+  var boton = document.getElementById("pwd");
+  var volver = document.getElementById("volver")
+  var contenido = document.getElementById("segundoC");
+  var contenido2 = document.getElementById("primerC")
 
 boton.addEventListener("click", function(event) {
-event.preventDefault();
-contenido.style.display = "block";
-contenido2.style.display = "none";
+  event.preventDefault();
+  contenido.style.display = "block";
+  contenido2.style.display = "none";
 
 });
 volver.addEventListener("click", function(event) {
-event.preventDefault();
-contenido.style.display = "none";
-contenido2.style.display = "block";
+  event.preventDefault();
+  contenido.style.display = "none";
+  contenido2.style.display = "block";
 
 });
