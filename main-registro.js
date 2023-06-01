@@ -22,30 +22,46 @@ function registro(){
         booleano = false;
     }
 
+    var nombre = document.getElementById("Usuario").value;
+    var contraseña = document.getElementById("Pass").value;
+    var fecha = document.getElementById("date").value;
+
+    var usuario = {
+      nombre: nombre,
+      contraseña: contraseña,
+      fecha: fecha
+    };
+
+    var registros = localStorage.getItem("registros");
+    if (registros) {
+      registros = JSON.parse(registros);
+    } else {
+      registros = [];
+    }
+
+    registros.push(usuario);
+
+    localStorage.setItem("registros", JSON.stringify(registros));
     if(booleano){
         window.location.href = "login.html"
     }
 
-    var username = document.getElementById("Usuario").value;
-    var password = document.getElementById("Pass").value;
+    //var username = document.getElementById("Usuario").value;
+    //var password = document.getElementById("Pass").value;
 
-    localStorage.setItem("Usuario", username);
-    localStorage.setItem("Pass", password);
+    //localStorage.setItem("Usuario", username);
+    //localStorage.setItem("Pass", password);
 
     var emailInput = document.getElementById("email");
     var email = emailInput.value;
   
-    // Expresión regular para validar un correo electrónico
+   
     var emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
   
     if (!emailRegex.test(email)) {
-      // El correo electrónico es válido
+     
       alert("Correo electrónico inválido");
     }
     
     document.getElementById("formu").reset();
-}
-
-function validarRegistro(){
-   
 }
