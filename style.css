@@ -22,13 +22,16 @@
 .logo-contenedor{
     flex: 0;
 }
+.logo{
+    font-size: 40px;
+    color: red;
+    font-family: 'Tahoma', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 
 a.linkini{
     text-decoration: none;
-    font-size: 40px;
-    color: red;
-    font-family: 'Tahoma', Tahoma, Geneva, Verdana, sans-serif;
+    
 
 }
 a:hover,
@@ -42,6 +45,7 @@ a:focus{
 .icon{
     background-color:red;
     border-radius: 10px;
+    text-decoration: none;
 }
 
 
@@ -66,14 +70,16 @@ a:focus{
 .ho{
     font-weight: bold;
 }
-/*
+
+
+
 .contenedor{
     background-color: #151515;
     min-height: calc(100vh - 50px);
     color: white;
   }
-*/
-  .contenedor{
+
+  .contenedor2{
     display: flex;
     justify-content:center;
     flex-wrap:wrap;
