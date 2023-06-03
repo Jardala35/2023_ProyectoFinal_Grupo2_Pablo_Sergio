@@ -118,13 +118,14 @@ a:focus{
     flex-direction:column;
     justify-content:space-between;
     width: auto;
-    border: 1px solid red;
-    box-shadow: 2px 2px 8px 4px #3e0707d1;
+    border: 3px solid red;
+    box-shadow: 2px 2px 8px 4px #921111d1;
     border-radius:15px;
     font-family: sans-serif;
     }
     .titulo{
     font-size: 24px;
+    color: whitesmoke;
     padding: 10px 10px 0 10px;;
     }
     .cuerpo{
@@ -163,6 +164,7 @@ a:focus{
         }
         .menu-item-search{
             justify-self: center;
+            
         }
         section {
             display: grid;
