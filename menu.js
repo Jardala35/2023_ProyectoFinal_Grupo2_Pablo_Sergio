@@ -91,7 +91,21 @@
         imagenAlt: "muestra",        
         enlaceTexto: "Más información",
         enlaceHref: "pelicula.html",
-      },      
+      },
+      {
+        titulo: "Malditos bastardos",
+        imagenSrc: "imgs/inglourious_basterds.jpg",
+        imagenAlt: "muestra",        
+        enlaceTexto: "Más información",
+        enlaceHref: "pelicula.html",
+      }, 
+      {
+        titulo: "Old boy",
+        imagenSrc: "imgs/Old_boy.jpg",
+        imagenAlt: "muestra",        
+        enlaceTexto: "Más información",
+        enlaceHref: "pelicula.html",
+      },       
      
     ];
   

@@ -62,24 +62,7 @@ a:focus{
     flex: 1 1 4;
 }
 
-@media (min-width: 768px) {
-    .menu-contenedor{
-        display: grid;        
-        grid-template-columns: repeat(3, 33%);
-        column-gap: 2rem;
-        
-    }
-    .menu-item-exit {
-        justify-self: end ;
-        padding-right: 30px;
-        
-        
-    }
-    .menu-item-search{
-        justify-self: center;
-    }
-    
-    }
+
 
 .menu-item-home{
     margin-left: 30px;
@@ -158,5 +141,36 @@ a:focus{
         width: 300px;
         height: auto;
         justify-self: center;
+        
+    }
+
+    @media (min-width: 768px) {
+        .menu-contenedor{
+            display: grid;        
+            grid-template-columns: repeat(3, 33%);
+            column-gap: 2rem;
+            
+        }
+        .menu-item-exit {
+            justify-self: end ;
+            padding-right: 30px;
+            
+            
+        }
+        .menu-item-search{
+            justify-self: center;
+        }
+        section {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 2rem;
+            
+            
+          }
+        .contenedor2{
+            margin: 10%;
+
+        }
+          
         
     }
