@@ -4,104 +4,91 @@
       {
         titulo: "Cadena perpetua",
         imagenSrc: "imgs/Cadena_perpetua.jpg",
-        imagenAlt: "muestra",
-        contenido: "Lorem ipsum",
+        imagenAlt: "muestra",       
         enlaceTexto: "Más información",
         enlaceHref: "pelicula.html",
       },
       {
         titulo: "Alien, El octavo pasajero",
         imagenSrc: "imgs/Alien.jpg",
-        imagenAlt: "muestra",
-        contenido: "Dolor sit amet",
+        imagenAlt: "muestra",        
         enlaceTexto: "Más información",
         enlaceHref: "pelicula.html",
       },
       {
         titulo: "Vengadores, Infinity war",
         imagenSrc: "imgs/avengers-infinity-war.jpg",
-        imagenAlt: "muestra",
-        contenido: "Dolor sit amet",
+        imagenAlt: "muestra",        
         enlaceTexto: "Más información",
         enlaceHref: "pelicula.html",
       },
       {
         titulo: "El silencio de los corderos",
         imagenSrc: "imgs/El_silencio_de_los_corderos.jpg",
-        imagenAlt: "muestra",
-        contenido: "Dolor sit amet",
+        imagenAlt: "muestra",        
         enlaceTexto: "Más información",
         enlaceHref: "pelicula.html",
       },
       {
         titulo: "Gladiator",
         imagenSrc: "imgs/Gladiator.jpg",
-        imagenAlt: "muestra",
-        contenido: "Dolor sit amet",
+        imagenAlt: "muestra",        
         enlaceTexto: "Más información",
         enlaceHref: "pelicula.html",
       },
       {
         titulo: "Interstellar",
         imagenSrc: "imgs/Interstellar.jpg",
-        imagenAlt: "muestra",
-        contenido: "Dolor sit amet",
+        imagenAlt: "muestra",        
         enlaceTexto: "Más información",
         enlaceHref: "pelicula.html",
       },
       {
-        titulo: "El señor de los anillos, el retorno del rey",
+        titulo: "LoR, El retorno del rey",
         imagenSrc: "imgs/Lord_of_rings.jpg",
-        imagenAlt: "muestra",
-        contenido: "Dolor sit amet",
+        imagenAlt: "muestra",        
         enlaceTexto: "Más información",
         enlaceHref: "pelicula.html",
       },
       {
         titulo: "Matrix",
         imagenSrc: "imgs/Matrix.jpg",
-        imagenAlt: "muestra",
-        contenido: "Dolor sit amet",
+        imagenAlt: "muestra",        
         enlaceTexto: "Más información",
         enlaceHref: "pelicula.html",
       },
       {
         titulo: "Origen",
         imagenSrc: "imgs/origen.jpg",
-        imagenAlt: "muestra",
-        contenido: "Dolor sit amet",
+        imagenAlt: "muestra",       
         enlaceTexto: "Más información",
         enlaceHref: "pelicula.html",
       },
       {
         titulo: "Pulp fiction",
         imagenSrc: "imgs/Pulp_fiction.jpg",
-        imagenAlt: "muestra",
-        contenido: "Dolor sit amet",
+        imagenAlt: "muestra",        
         enlaceTexto: "Más información",
         enlaceHref: "pelicula.html",
       },
       {
         titulo: "El resplandor",
         imagenSrc: "imgs/resplandor.jpg",
-        imagenAlt: "muestra",
-        contenido: "Dolor sit amet",
+        imagenAlt: "muestra",        
         enlaceTexto: "Más información",
         enlaceHref: "pelicula.html",
       },
       {
         titulo: "Terminator 2, el juicio final",
         imagenSrc: "imgs/Terminator_2_El_juicio_final.jpg",
-        imagenAlt: "muestra",
-        contenido: "Dolor sit amet",
+        imagenAlt: "muestra",        
         enlaceTexto: "Más información",
         enlaceHref: "pelicula.html",
       },
       {
         titulo: "El caballero oscuro",
         imagenSrc: "imgs/the_dark_knight.jpg",
-        imagenAlt: "muestra",
-        contenido: "Dolor sit amet",
+        imagenAlt: "muestra",        
         enlaceTexto: "Más información",
         enlaceHref: "pelicula.html",
       },      
@@ -127,13 +114,11 @@
         var imgImagen = document.createElement("img");
         imgImagen.className = "imgLista";
         imgImagen.src = etiquetas[i].imagenSrc;
-        imgImagen.alt = etiquetas[i].imagenAlt;
-      
-        var pContenido = document.createElement("p");
-        pContenido.textContent = etiquetas[i].contenido;
+        imgImagen.alt = etiquetas[i].imagenAlt;      
+        
       
         divCuerpo.appendChild(imgImagen);
-        divCuerpo.appendChild(pContenido);
+       
       
         var divPie = document.createElement("div");
         divPie.className = "pie";

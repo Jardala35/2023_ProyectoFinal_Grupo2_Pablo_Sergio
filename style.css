@@ -59,7 +59,7 @@ a:focus{
 .menu-item-home,
 .menu-item-search,
 .menu-item-exit {
-    flex: 1 1 1;
+    flex: 1 1 4;
 }
 
 @media (min-width: 768px) {
@@ -69,7 +69,15 @@ a:focus{
         column-gap: 2rem;
         
     }
-   
+    .menu-item-exit {
+        justify-self: end ;
+        padding-right: 30px;
+        
+        
+    }
+    .menu-item-search{
+        justify-self: center;
+    }
     
     }
 
@@ -123,8 +131,8 @@ a:focus{
     flex-direction:column;
     justify-content:space-between;
     width: auto;
-    border: 1px solid lightgray;
-    box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+    border: 1px solid red;
+    box-shadow: 2px 2px 8px 4px #3e0707d1;
     border-radius:15px;
     font-family: sans-serif;
     }
@@ -134,10 +142,10 @@ a:focus{
     }
     .cuerpo{
     padding: 10px;
-    flex: 1 1 100%;
+    flex: 1 1 100%;    
     }
     .pie{
-    background: #6699ff;
+    background: #000000;
     border-radius:0 0 15px 15px;
     padding: 10px;
     text-align:center; }
@@ -149,4 +157,6 @@ a:focus{
     .imgLista{
         width: 300px;
         height: auto;
+        justify-self: center;
+        
     }
