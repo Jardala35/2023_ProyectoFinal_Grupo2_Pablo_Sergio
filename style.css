@@ -132,13 +132,13 @@ a:focus{
     flex: 1 1 100%;    
     }
     .pie{
-    background: #000000;
+    background: red;
     border-radius:0 0 15px 15px;
     padding: 10px;
     text-align:center; }
     .pie a{
     text-decoration: none;
-    color: white;
+    color: black;
     }
    
     .imgLista{
