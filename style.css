@@ -1,5 +1,6 @@
 * {
     margin: 0;
+   
 }
 
 .barra-navegacion{
@@ -16,29 +17,24 @@
     align-items: center;
     padding: 0 50px;
     height: 100%;
+    position: sticky;
     color: white;
 }
+
 
 .logo-contenedor{
     flex: 0;
 }
 .logo{
-    font-size: 40px;
+    font-size: 60px;
     color: red;
     font-family: 'Tahoma', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-
-a.linkini{
     text-decoration: none;
     
-
 }
+
 a:hover,
-a:focus{
-    font-size: 40px;
-    color: red;
-    font-family: 'Tahoma', Tahoma, Geneva, Verdana, sans-serif;
+a:focus{    
     text-decoration: none;
 }
 
@@ -49,13 +45,45 @@ a:focus{
 }
 
 
+
 .menu-contenedor{
     width: 100%;
     height: 75px;
     background-color: black;
     position: sticky;
     top: 0;
+    display: flex;
+    justify-content: space-between;
     
+}
+.menu-item-home,
+.menu-item-search,
+.menu-item-exit {
+    flex: 1 1 1;
+}
+
+@media (min-width: 768px) {
+    .menu-contenedor{
+        display: grid;        
+        grid-template-columns: repeat(3, 33%);
+        column-gap: 2rem;
+        
+    }
+   
+    
+    }
+
+.menu-item-home{
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.menu-item-search{
+    margin-left: 0px;
+    margin-top: 30px;
+}
+.menu-item-exit{
+   margin-right: 30px;
+   margin-top: 20px;
 }
 
 .lista-menu{
@@ -67,9 +95,14 @@ a:focus{
     margin-right: 30px;
     margin-left: 30px;
 }
-.ho{
-    font-weight: bold;
+.lista-menu-search{
+    margin-right: 30px;
+    margin-left: 30px;
 }
+.lista-menu-exit{
+    float: right;
+}
+
 
 
 
@@ -112,12 +145,8 @@ a:focus{
     text-decoration: none;
     color: white;
     }
-    .pie a:after {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
-    content: ""
+   
+    .imgLista{
+        width: 300px;
+        height: auto;
     }

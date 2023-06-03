@@ -13,7 +13,7 @@ function login(){
     });
 
     if (usuarioEncontrado) {
-      window.location.href = "index.html"; 
+      window.location.href = "menu.html"; 
     } else {
       alert("Nombre de usuario o contraseña incorrectos. Por favor, inténtalo nuevamente.");
     }

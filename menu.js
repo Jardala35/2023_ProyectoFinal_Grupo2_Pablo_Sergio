@@ -3,109 +3,109 @@
     var etiquetas = [
       {
         titulo: "Cadena perpetua",
-        imagenSrc: "/imgs/Cadena_perpetua.jpg",
+        imagenSrc: "imgs/Cadena_perpetua.jpg",
         imagenAlt: "muestra",
         contenido: "Lorem ipsum",
         enlaceTexto: "Más información",
-        enlaceHref: "#",
+        enlaceHref: "pelicula.html",
       },
       {
         titulo: "Alien, El octavo pasajero",
-        imagenSrc: "/imgs/Alien.jpg",
+        imagenSrc: "imgs/Alien.jpg",
         imagenAlt: "muestra",
         contenido: "Dolor sit amet",
         enlaceTexto: "Más información",
-        enlaceHref: "#",
+        enlaceHref: "pelicula.html",
       },
       {
         titulo: "Vengadores, Infinity war",
-        imagenSrc: "/imgs/avengers-infinity-war.jpg",
+        imagenSrc: "imgs/avengers-infinity-war.jpg",
         imagenAlt: "muestra",
         contenido: "Dolor sit amet",
         enlaceTexto: "Más información",
-        enlaceHref: "#",
+        enlaceHref: "pelicula.html",
       },
       {
         titulo: "El silencio de los corderos",
-        imagenSrc: "/imgs/El_silencio_de_los_corderos.jpg",
+        imagenSrc: "imgs/El_silencio_de_los_corderos.jpg",
         imagenAlt: "muestra",
         contenido: "Dolor sit amet",
         enlaceTexto: "Más información",
-        enlaceHref: "#",
+        enlaceHref: "pelicula.html",
       },
       {
         titulo: "Gladiator",
-        imagenSrc: "/imgs/Gladiator.jpg",
+        imagenSrc: "imgs/Gladiator.jpg",
         imagenAlt: "muestra",
         contenido: "Dolor sit amet",
         enlaceTexto: "Más información",
-        enlaceHref: "#",
+        enlaceHref: "pelicula.html",
       },
       {
         titulo: "Interstellar",
-        imagenSrc: "/imgs/Interstellar.jpg",
+        imagenSrc: "imgs/Interstellar.jpg",
         imagenAlt: "muestra",
         contenido: "Dolor sit amet",
         enlaceTexto: "Más información",
-        enlaceHref: "#",
+        enlaceHref: "pelicula.html",
       },
       {
         titulo: "El señor de los anillos, el retorno del rey",
-        imagenSrc: "/imgs/Lord_of_rings.jpg",
+        imagenSrc: "imgs/Lord_of_rings.jpg",
         imagenAlt: "muestra",
         contenido: "Dolor sit amet",
         enlaceTexto: "Más información",
-        enlaceHref: "#",
+        enlaceHref: "pelicula.html",
       },
       {
         titulo: "Matrix",
-        imagenSrc: "/imgs/Matrix.jpg",
+        imagenSrc: "imgs/Matrix.jpg",
         imagenAlt: "muestra",
         contenido: "Dolor sit amet",
         enlaceTexto: "Más información",
-        enlaceHref: "#",
+        enlaceHref: "pelicula.html",
       },
       {
         titulo: "Origen",
-        imagenSrc: "/imgs/origen.jpg",
+        imagenSrc: "imgs/origen.jpg",
         imagenAlt: "muestra",
         contenido: "Dolor sit amet",
         enlaceTexto: "Más información",
-        enlaceHref: "#",
+        enlaceHref: "pelicula.html",
       },
       {
         titulo: "Pulp fiction",
-        imagenSrc: "/imgs/Pulp_fiction.jpg",
+        imagenSrc: "imgs/Pulp_fiction.jpg",
         imagenAlt: "muestra",
         contenido: "Dolor sit amet",
         enlaceTexto: "Más información",
-        enlaceHref: "#",
+        enlaceHref: "pelicula.html",
       },
       {
         titulo: "El resplandor",
-        imagenSrc: "/imgs/resplandor.jpg",
+        imagenSrc: "imgs/resplandor.jpg",
         imagenAlt: "muestra",
         contenido: "Dolor sit amet",
         enlaceTexto: "Más información",
-        enlaceHref: "#",
+        enlaceHref: "pelicula.html",
       },
       {
         titulo: "Terminator 2, el juicio final",
-        imagenSrc: "/imgs/Terminator_2_El_juicio_final.jpg",
+        imagenSrc: "imgs/Terminator_2_El_juicio_final.jpg",
         imagenAlt: "muestra",
         contenido: "Dolor sit amet",
         enlaceTexto: "Más información",
-        enlaceHref: "#",
+        enlaceHref: "pelicula.html",
       },
       {
         titulo: "El caballero oscuro",
-        imagenSrc: "/imgs/the_dark_knight.jpg",
+        imagenSrc: "imgs/the_dark_knight.jpg",
         imagenAlt: "muestra",
         contenido: "Dolor sit amet",
         enlaceTexto: "Más información",
-        enlaceHref: "#",
+        enlaceHref: "pelicula.html",
       },      
-      // Agrega más objetos si deseas más etiquetas
+     
     ];
   
     var contenedor = document.getElementById("miDiv");
@@ -125,6 +125,7 @@
         divCuerpo.className = "cuerpo";
       
         var imgImagen = document.createElement("img");
+        imgImagen.className = "imgLista";
         imgImagen.src = etiquetas[i].imagenSrc;
         imgImagen.alt = etiquetas[i].imagenAlt;
       
@@ -150,10 +151,7 @@
         divContenedor.appendChild(divTarjeta);
       
         contenedor.appendChild(divContenedor);
-      }
-  
-      divContenedor.appendChild(divTarjeta);
-  
-      contenedor.appendChild(divContenedor);
+      }  
+     
     }
   );
