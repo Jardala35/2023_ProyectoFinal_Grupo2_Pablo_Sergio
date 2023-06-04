@@ -292,3 +292,77 @@ window.addEventListener("DOMContentLoaded", function () {
     
     ejecutarCodigoHTML(codigo);
 });
+
+function searchMovies() {
+    var etiquetas = [
+      {
+        titulo: "Cadena perpetua",        
+        enlaceHref: "pelicula.html?codigo=0",
+      },
+      {
+        titulo: "Alien, El octavo pasajero",        
+        enlaceHref: "pelicula.html?codigo=1",
+      },
+      {
+        titulo: "Vengadores, Infinity war",        
+        enlaceHref: "pelicula.html?codigo=2",
+      },
+      {
+        titulo: "El silencio de los corderos",       
+        enlaceHref: "pelicula.html?codigo=3",
+      },
+      {
+        titulo: "Gladiator",        
+        enlaceHref: "pelicula.html?codigo=4",
+      },
+      {
+        titulo: "Interstellar",        
+        enlaceHref: "pelicula.html?codigo=5",
+      },
+      {
+        titulo: "LoR, El retorno del rey",       
+        enlaceHref: "pelicula.html?codigo=6",
+      },
+      {
+        titulo: "Matrix",        
+        enlaceHref: "pelicula.html?codigo=7",        
+      },
+      {
+        titulo: "Origen",        
+        enlaceHref: "pelicula.html?codigo=8",        
+      },
+      {
+        titulo: "Pulp fiction",        
+        enlaceHref: "pelicula.html?codigo=9",      
+      },
+      {
+        titulo: "El resplandor",        
+        enlaceHref: "pelicula.html?codigo=10",        
+      },
+      {
+        titulo: "Terminator 2, el juicio final",       
+        enlaceHref: "pelicula.html?codigo=11",        
+      },
+      {
+        titulo: "El caballero oscuro",       
+        enlaceHref: "pelicula.html?codigo=12",        
+      },
+      {
+        titulo: "Malditos bastardos",       
+        enlaceHref: "pelicula.html?codigo=13",        
+      }, 
+      {
+        titulo: "Old boy",        
+        enlaceHref: "pelicula.html?codigo=14",        
+      },       
+     
+    ];
+    var searchTerm = document.getElementById("searchInput").value.toLowerCase();
+  
+    etiquetas.forEach(function(etiqueta) {
+      var title = etiqueta.titulo.toLowerCase();
+      if (title.includes(searchTerm)) {
+        window.location.href = etiqueta.enlaceHref;
+      }
+    });
+  }
