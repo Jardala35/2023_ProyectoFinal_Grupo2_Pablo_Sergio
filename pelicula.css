@@ -149,6 +149,11 @@ h3{
     padding-bottom: 2%;
 }
 
+iframe{
+    width: 600px;
+    height: 400px;
+}
+
    
 
     @media (min-width: 768px) {
@@ -168,6 +173,8 @@ h3{
             justify-self: center;
             
         }
+
+       
 
        
           

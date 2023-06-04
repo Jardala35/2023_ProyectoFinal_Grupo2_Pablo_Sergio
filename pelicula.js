@@ -17,10 +17,7 @@ var fragmentosHTML = [
     </div>
     <div class="cont2">
         <h3>Trailer</h3>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/r5X-hFf6Bwo"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/FyP4rXUmQ2U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
   </article>`,
     //2
