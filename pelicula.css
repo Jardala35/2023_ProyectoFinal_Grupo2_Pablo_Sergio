@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+   
+}
+
+body{
+    background-color: #000000;
+}
+
+.barra-navegacion{
+    width: 100%;
+    height: 75px;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    
+}
+
+.barra-navegacion-contenedor{
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    height: 100%;
+    position: sticky;
+    color: white;
+}
+
+
+.logo-contenedor{
+    flex: 0;
+}
+.logo{
+    font-size: 60px;
+    color: red;
+    font-family: 'Tahoma', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    
+}
+
+a:hover,
+a:focus{    
+    text-decoration: none;
+}
+
+.icon{
+    background-color:red;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+
+
+.menu-contenedor{
+    width: 100%;
+    height: 75px;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.menu-item-home,
+.menu-item-search,
+.menu-item-exit {
+    flex: 1 1 4;
+}
+
+
+
+.menu-item-home{
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.menu-item-search{
+    margin-left: 0px;
+    margin-top: 30px;
+}
+.menu-item-exit{
+   margin-right: 30px;
+   margin-top: 20px;
+}
+
+.lista-menu{
+    display: flex;
+    list-style: none;
+}
+
+.lista-menu-home{
+    margin-right: 30px;
+    margin-left: 30px;
+}
+.lista-menu-search{
+    margin-right: 30px;
+    margin-left: 30px;
+}
+.lista-menu-exit{
+    float: right;
+}  
+
+.titulo{
+    font-size: 50px;
+    color: white;
+    font-family: 'Tahoma', Tahoma, Geneva, Verdana, sans-serif;
+}
+.imgpel{
+    width: 300px;
+    height: auto;
+    
+}
+.texto{
+    font-size: 20px;
+    color: white;
+    font-family: 'Tahoma', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.texto2{
+    font-size: 18px;
+    color: red;
+    font-family: 'Tahoma', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.art{
+    display: flex;
+    
+    flex-wrap:wrap;
+    gap: 16px;
+}
+
+.cont1{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    width: 40%;
+    padding-left: 2%;
+    gap: 16px;
+    
+}
+
+.cont2{   
+    
+    margin-bottom: 50px;
+}
+
+h3{
+    color: white;
+    font-family: 'Tahoma', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+   
+
+    @media (min-width: 768px) {
+        .menu-contenedor{
+            display: grid;        
+            grid-template-columns: repeat(3, 33%);
+            column-gap: 2rem;
+            
+        }
+        .menu-item-exit {
+            justify-self: end ;
+            padding-right: 30px;
+            
+            
+        }
+        .menu-item-search{
+            justify-self: center;
+            
+        }
+
+       
+          
+        
+    }
